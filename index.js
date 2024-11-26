@@ -1,12 +1,12 @@
 const technalogies = [
   {
     item: "./logo/react-removebg-preview.png",
-    name: "REACT",
+    name: "React Js",
     data: "React.js is a JavaScript library for building interactive user interfaces. It helps create fast, dynamic web apps by using reusable components.",
   },
   {
     item: "./logo/laravel-removebg-preview.png",
-    name: "LARAVEL",
+    name: "Laravel",
     data: "Laravel is a powerful and elegant PHP framework designed for building web applications",
   },
   {
@@ -16,7 +16,7 @@ const technalogies = [
   },
   {
     item: "./logo/mysql-removebg-preview.png",
-    name: "MYSQL",
+    name: "MySQL",
     data: "MySQL is a free, open-source database used to store and manage data. It uses SQL to organize and retrieve information quickly and reliably.",
   },
   {
