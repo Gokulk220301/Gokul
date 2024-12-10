@@ -1,5 +1,5 @@
 .bac-img {
-  background-color: rgba(0, 0, 0, 0.526);
+  /* background-color: rgba(0, 0, 0, 0.526); */
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-attachment: fixed;
@@ -8,24 +8,31 @@
   background-size: cover;
 }
 
-.image_overlay {
-  background-color: rgba(0, 0, 0, 0.526);
-}
-
-.fixed-batch {
-  background-color: black;
-  z-index: 2;
+body {
+  background-color: rgba(28, 28, 28, 1);
 }
 
 .bg-body-tertiary {
   background-color: transparent !important;
 }
 
+.fixed-batch {
+  background-color: rgba(28, 28, 28, 1);
+  z-index: 2;
+}
+
 .logo {
   max-width: 7rem;
   max-height: 5.5rem;
 }
-
+.logo-nav{
+  max-width: 5rem;
+  max-height: 4.5rem;
+}
+.logo-footer{
+  max-width: 3rem;
+  max-height: 4rem;
+}
 .color {
   color: #fff;
 }
@@ -38,6 +45,7 @@
 .viewport-child-2 {
   height: 100%;
 }
+
 
 /* ///////////button animations/////////////// */
 .bg-onclick,
@@ -184,25 +192,28 @@
     transform: rotate(360deg);
   }
 }
-.span-hellotext{
+
+.span-hellotext {
   font-size: 2rem;
   color: red;
 }
+
 /* end animations */
 .img {
   max-width: 20rem;
   border-radius: 50%;
   margin: 1rem;
   z-index: 1;
-  box-shadow: 5px 10px 20px 7px rgb(43, 214, 230);
+  box-shadow: 1px 2px 1px 2px rgb(234, 239, 240);
 }
 
-.img1{
+.img1 {
   max-width: 20rem;
   border-radius: 10%;
   margin: 1rem;
   z-index: 1;
 }
+
 .img:hover {
   transform: scale(1.2) !important;
 }
@@ -217,13 +228,14 @@
 }
 
 .div-boarder {
-  background-color: rgba(254, 252, 252, 0.441);
   border-radius: 10px;
+  border: 1px solid #fff;
+  color: white;
 }
 
 .div-boarder:hover {
-  border-color: rgba(89, 180, 250, 0.514);
-  background-color: rgb(254, 252, 252);
+  color: black;
+  background-color: white;
   transform: scale(1.0);
 }
 
@@ -246,6 +258,7 @@
     font-size: 1.2rem;
   }
 
+
   /* .technologies{
     margin-left:25% !important;
   } */
@@ -259,20 +272,34 @@
   }
 
   .footer .container-fluid {
-    flex-direction: column; /* Stack the logo and icons vertically */
-    align-items: center;   /* Center align the items */
+    flex-direction: column;
+    /* Stack the logo and icons vertically */
+    align-items: center;
+    /* Center align the items */
     text-align: center;
   }
 
   .footer .navbar-brand {
-    margin-bottom: 10px; /* Add space between the logo and the icons */
+    margin-bottom: 10px;
+    /* Add space between the logo and the icons */
   }
 
   .footer ul {
-    justify-content: center; /* Center the icons */
+    justify-content: center;
+    /* Center the icons */
   }
 
   .footer ul li {
-    margin: 0 8px; /* Adjust spacing between icons */
+    margin: 0 8px;
+    /* Adjust spacing between icons */
+  }
+}
+
+@media (max-width: 768px) {
+
+  .viewport-child,
+  .viewport-child-2 {
+    height: 100%;
+    width: 100%;
   }
 }
