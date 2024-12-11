@@ -15,145 +15,143 @@
 </head>
 
 <body>
-  <div class="container-fluid fixed-batch position-fixed">
-    <nav class="navbar navbar-expand-lg">
+  <div class="m-4">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img class="logo-nav" src="images/GOK.png" alt="logo" />
-        </a>
-        <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-          aria-label="Toggle navigation">
+        <img class="logo-nav" src="images/Logo.png" alt="logo" />
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-          <ul class="color navbar-nav">
-            <li class="nav-item">
-              <a class="bg-onclick bg-onclick--animated nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="bg-onclick bg-onclick--animated nav-link" href="#aboutus" id="aboutLink">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="bg-onclick bg-onclick--animated nav-link" href="#skilllink" id="skillLink">My Skills</a>
-            </li>
-          </ul>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+          <div class="navbar-nav">
+            <ul class="color navbar-nav">
+              <li class="nav-item">
+                <a class="bg-onclick bg-onclick--animated nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="bg-onclick bg-onclick--animated nav-link" href="#aboutus" id="aboutLink">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="bg-onclick bg-onclick--animated nav-link" href="#skilllink" id="skillLink">My Skills</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
   </div>
   <div class="container-fluid p-0 bac-img ">
-    <div class="image_overlay">
-      <div class="container viewport ">
-        <div class="row viewport-child">
-          <div
-            class="bmargin--mobile animation viewport-child col-12 col-md-8 overlap-container d-flex justify-content-center align-items-center">
+    <div class="container viewport ">
+      <div class="row">
+        <div
+          class="bmargin--mobile animation viewport-child col-12 col-md-8 overlap-container d-flex justify-content-center align-items-center">
+          <div>
             <div>
-              <div>
-                <span class="span-hellotext">Hello, My name is</span>
-              </div>
-              <span class="span-name">Gokul Kathirvel</span>
-              <div>
-                <span class="span name-text"></span>
-              </div>
-              <p class="p-content">
-                I'm a full-stack developer who enjoys working on both the front-end and back-end of websites. I’m
-                excited by the possibilities of technology and love creating websites that are both visually appealing
-                and easy to use. 🌟
-              </p>
+              <span class="span-hellotext">Hello, My name is</span>
             </div>
-          </div>
-          <div
-            class="mt-md-5 animation--down viewport-child-2 col-12 col-md-4 d-flex justify-content-center align-items-center ">
-            <div class="circle--rotate"><img id="img1" class="img img-fluid opacity-0" src="./images/image.png"
-                alt="img1"></div><img id="img1" class="img" src="./images/image.png" alt="img1">
-          </div>
-        </div>
-      </div>
-      <div class="container aboutus" id="aboutus">
-        <div class="row ">
-          <div class="col-md-4 d-flex justify-content-center align-items-center ">
-            <img id="img1" class="img1" src="./images/gokul.png" alt="img1">
-          </div>
-          <div
-            class="bmargin--mobile animation viewport-child col-md-8 overlap-container d-flex justify-content-center align-items-center">
+            <span class="span-name">Gokul Kathirvel</span>
             <div>
-              <div>
-                <span class="span-hellotext">About me</span>
-              </div>
-              <span class="span-name">Who Am I</span>
-              <div>
-                <span class="span name-text"></span>
-              </div>
-              <p class="p-content">
-                My name is Gokul, and I'm a passionate full-stack web developer. I love working at the intersection of
-                design and technology,
-                turning creative ideas into functional websites. I specialize in full-stack development, focusing on
-                building websites that are both visually appealing and easy to use.
-                <br /><br />
-                I'm skilled in React Js, Laravel, HTML, CSS, JavaScript and more. I also pay close attention to making
-                sure websites look great and work well on any device or screen size,
-                using responsive design principles. I'm always learning and keeping up with the latest tools and
-                technologies to improve my skills and deliver the best solutions for my clients.
-                <br /><br />My goal is to create efficient, user-friendly, and reliable web solutions!!!
-              </p>
+              <span class="span name-text"></span>
             </div>
+            <p class="p-content">
+              I'm a full-stack developer who enjoys working on both the front-end and back-end of websites. I’m
+              excited by the possibilities of technology and love creating websites that are both visually appealing
+              and easy to use. 🌟
+            </p>
           </div>
         </div>
-      </div>
-      <div class="container skilllink" id="skilllink">
-        <div class="row">
-          <div class="col d-flex justify-content-center">
-            <div class="">
-              <div class="span span-1">My Skills</div>
-            </div>
-          </div>
+        <div
+          class="mt-md-5 animation--down viewport-child-2 col-12 col-md-4 d-flex justify-content-center align-items-center ">
+          <div class="circle--rotate"><img id="img1" class="img img-fluid opacity-0" src="./images/image.png"
+              alt="img1">
+          </div><img id="img1" class="img" src="./images/image.png" alt="img1">
         </div>
-      </div>
-
-      <div id="scroll" class="container">
-        <div id="array" class="row d-flex justify-content-center">
-        </div>
-      </div>
-
-      <div class="container">
-        <footer class="footer bg-body-tertiary">
-          <div class="container-fluid d-flex justify-content-between align-items-center">
-            <a class="navbar-brand" href="#">
-              <img class="logo-footer" src="images/GOK.png" alt="logo" />
-            </a>
-            <div>
-              <ul class="list-unstyled d-flex mb-0">
-                <li class="me-3">
-                  <a class="bg-onclick bg-onclick--animated" href="https://www.linkedin.com/in/kathirvelgokul/"
-                    aria-current="page">
-                    <i class="fs-5 bi bi-linkedin"></i>
-                  </a>
-                </li>
-                <li class="me-3">
-                  <a class="bg-onclick bg-onclick--animated" href="mailto:gokul.k220301@gmail.com" aria-current="page">
-                    <i class="fs-5 bi bi-envelope-at-fill"></i>
-                  </a>
-                </li>
-                <li class="me-3">
-                  <a class="bg-onclick bg-onclick--animated" href="#">
-                    <i class="fs-5 bi bi-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="bg-onclick bg-onclick--animated"
-                    href="https://wa.me/9443231787?text=Hello%20from%20my%20website!" aria-current="page">
-                    <i class="fs-5 bi bi-whatsapp"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </footer>
       </div>
     </div>
-  </div>
+    <div class="container aboutus" id="aboutus">
+      <div class="row ">
+        <div class="col-md-4">
+          <img id="img1" class="img1" src="./images/gokul.png" alt="img1">
+        </div>
+        <div class="col-md-8">
+          <div>
+            <div>
+              <span class="span-hellotext">About me</span>
+            </div>
+            <span class="span-name">Who Am I</span>
+            <div>
+              <span class="span name-text"></span>
+            </div>
+            <p class="p-content">
+              My name is Gokul, and I'm a passionate full-stack web developer. I love working at the intersection of
+              design and technology,
+              turning creative ideas into functional websites. I specialize in full-stack development, focusing on
+              building websites that are both visually appealing and easy to use.
+              <br /><br />
+              I'm skilled in React Js, Laravel, HTML, CSS, JavaScript and more. I also pay close attention to making
+              sure websites look great and work well on any device or screen size,
+              using responsive design principles. I'm always learning and keeping up with the latest tools and
+              technologies to improve my skills and deliver the best solutions for my clients.
+              <br /><br />My goal is to create efficient, user-friendly, and reliable web solutions!!!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container skilllink" id="skilllink">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <div class="">
+            <div class="span span-1">My Skills</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="scroll" class="container">
+      <div id="array" class="row d-flex justify-content-center">
+      </div>
+    </div>
+    <div class="container">
+      <footer class="footer bg-body-tertiary py-3">
+        <div class="row align-items-center">
+          <!-- Logo Section -->
+          <div class="col-12 col-md-6 text-center text-md-start">
+            <a class="navbar-brand" href="#">
+              <img class="logo-footer" src="images/Logo.png" alt="logo" />
+            </a>
+          </div>
 
+          <!-- Social Icons Section -->
+          <div class="col-12 col-md-6 text-center text-md-end mt-3 mt-md-0">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item me-3">
+                <a class="bg-onclick bg-onclick--animated" href="https://www.linkedin.com/in/kathirvelgokul/"
+                  aria-current="page">
+                  <i class="fs-5 bi bi-linkedin"></i>
+                </a>
+              </li>
+              <li class="list-inline-item me-3">
+                <a class="bg-onclick bg-onclick--animated" href="mailto:gokul.k220301@gmail.com" aria-current="page">
+                  <i class="fs-5 bi bi-envelope-at-fill"></i>
+                </a>
+              </li>
+              <li class="list-inline-item me-3">
+                <a class="bg-onclick bg-onclick--animated" href="#">
+                  <i class="fs-5 bi bi-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="bg-onclick bg-onclick--animated"
+                  href="https://wa.me/9443231787?text=Hello%20from%20my%20website!" aria-current="page">
+                  <i class="fs-5 bi bi-whatsapp"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
   <script src="./index.js"></script>
 </body>
 
