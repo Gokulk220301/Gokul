@@ -1,49 +1,52 @@
 const technalogies = [
   {
-    item: "./logo/react-removebg-preview.png",
-    name: "React Js",
-    data: "React.js is a JavaScript library for building interactive user interfaces. It helps create fast, dynamic web apps by using reusable components.",
+    item: "./logo/react.png",
+    name: "React"
   },
   {
     item: "./logo/laravel-removebg-preview.png",
     name: "Laravel",
-    data: "Laravel is a powerful and elegant PHP framework designed for building web applications",
+  },
+  {
+    item: "./logo/redux.png",
+    name: "Redux",
   },
   {
     item: "./logo/php-removebg-preview.png",
     name: "PHP",
-    data: "PHP is a server-side programming language used to create dynamic websites and applications.",
   },
   {
     item: "./logo/mysql-removebg-preview.png",
     name: "MySQL",
-    data: "MySQL is a free, open-source database used to store and manage data. It uses SQL to organize and retrieve information quickly and reliably.",
   },
   {
     item: "./logo/linux-removebg-preview.png",
     name: "Linux",
-    data: "Linux is an open-source operating system known for being secure, stable, and customizable, widely used for servers and development.",
   },
   {
-    item: "./logo/JavaScript-removebg-preview.png",
+    item: "./logo/javascript.png",
     name: "Javascript",
-    data: "JavaScript is a programming language used to create interactive effects and dynamic content on websites.",
   },
   {
-    item: "./logo/html-removebg-preview.png",
+    item: "./logo/html5.png",
     name: "HTML",
-    data: "HTML (HyperText Markup Language) is the standard language used to create and structure content on the web, such as text, images, and links.",
   },
   {
-    item: "./logo/css-removebg-preview.png",
+    item: "./logo/css3.png",
     name: "CSS",
-    data: "CSS (Cascading Style Sheets) is used to style and design the layout of web pages, including colors, fonts, and spacing.",
   },
   {
-    item: "./logo/bootstrap-removebg-preview.png",
+    item: "./logo/bootstrap.png",
     name: "Bootstrap",
-    data: "Bootstrap is a framework that helps build responsive websites quickly with ready-to-use components.",
   },
+  {
+    item: "./logo/postman.png",
+    name: "Postman",
+  },
+  {
+    item: "./logo/git.png",
+    name: "Git",
+  }
 ];
 const typed1 = new Typed(".name-text", {
   strings: ["Full Stack Developer"],
@@ -55,16 +58,15 @@ const typed1 = new Typed(".name-text", {
 window.addEventListener("load", function () {
   let x = technalogies.map(
     (item) => `<div class="col-md-2 col m-2 p-4 div-boarder">
-  <div class="technologies m-auto">
-    <img class="technologies-img" src="${item.item}" alt="${item.name}">
-  </div>
-  <div class="d-flex justify-content-center">
-    <strong class="fs-5 mt-3 ">${item.name}</strong>
-  </div>
-  <div class="d-flex justify-content-center align-items-center">
-    <span class="">${item.data}</span>
-  </div>
-</div>`
+    <div class="d-flex align-items-center">
+      <div class="technologies me-3">
+        <img class="technologies-img" src="${item.item}" alt="${item.name}">
+      </div>
+      <div>
+        <strong class="fs-5">${item.name}</strong>
+      </div>
+    </div>
+  </div>`
   );
   this.document.getElementById("array").innerHTML = x;
   // JavaScript to add the 'scrolled' class on scroll
@@ -79,7 +81,7 @@ window.addEventListener("load", function () {
     }
   });
 });
-document.getElementById("aboutLink").addEventListener("click", function(event) {
+document.getElementById("aboutLink").addEventListener("click", function (event) {
   event.preventDefault();
   const aboutSection = document.getElementById("aboutus");
   aboutSection.scrollIntoView({
@@ -87,9 +89,17 @@ document.getElementById("aboutLink").addEventListener("click", function(event) {
     block: 'start'
   });
 });
-document.getElementById("skillLink").addEventListener("click", function(event) {
+document.getElementById("skillLink").addEventListener("click", function (event) {
   event.preventDefault();
   const aboutSection = document.getElementById("skilllink");
+  aboutSection.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+});
+document.getElementById("experienceLink").addEventListener("click", function (event) {
+  event.preventDefault();
+  const aboutSection = document.getElementById("experience");
   aboutSection.scrollIntoView({
     behavior: 'smooth',
     block: 'start'
