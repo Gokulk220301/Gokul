@@ -209,13 +209,14 @@ body {
   margin: 1rem;
   z-index: 1;
   box-shadow: 1px 2px 1px 2px rgb(234, 239, 240);
+  height: 40vh;
 }
 
 .img1 {
   max-width: 20rem;
   border-radius: 10%;
   margin: 1rem;
-  z-index: 1;
+  height: 90%;
 }
 
 .img:hover {
