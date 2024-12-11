@@ -252,9 +252,13 @@ body {
   }
   .img {
     max-width: 12.5rem;
+    height: 30vh;
   }
   .viewport-child-2 {
     max-height: 50%;
+  }
+  .mobile-image{
+    margin-top: 220px;
   }
   .footer .container-fluid {
     flex-direction: column;
